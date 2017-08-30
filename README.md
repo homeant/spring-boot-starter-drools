@@ -1,9 +1,11 @@
 # spring-boot-starter-drools
+>>> spring-boot 使用版本为 1.5.6.RELEASE  
+
 ```xml
 <dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter</artifactId>
-	<version>最新版</version>
+	<groupId>xin.guaika.cloud</groupId>
+	<artifactId>spring-boot-starter-drools</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
