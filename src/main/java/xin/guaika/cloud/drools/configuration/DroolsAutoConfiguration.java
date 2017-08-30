@@ -29,7 +29,6 @@ import org.kie.api.runtime.KieSession;
 import org.kie.internal.io.ResourceFactory;
 import org.kie.spring.KModuleBeanFactoryPostProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
@@ -45,7 +44,6 @@ import org.springframework.core.io.support.ResourcePatternResolver;
  * @Data 2017年8月30日 上午10:00:09
  */
 @Configuration
-@EnableConfigurationProperties(DroolsAutoConfiguration.class)
 public class DroolsAutoConfiguration {
 private static final String RULES_PATH = "rules/";
     
