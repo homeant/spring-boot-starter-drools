@@ -1,6 +1,6 @@
 package cloud.user
 
-import xin.guaika.cloud.drools.model.User;
+import xin.guaika.cloud.drools.test.model.User;
 
 rule "user.name"
 

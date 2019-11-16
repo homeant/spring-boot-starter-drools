@@ -1,53 +1,64 @@
 /**
  * Copyright (c) 2011-2014, guaika (junchen1314@foxmail.com).
- *
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- *
+ * <p>
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package xin.guaika.cloud.drools;
+package xin.guaika.cloud.drools.test;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.kie.api.runtime.KieSession;
+import org.kie.spring.KModuleBeanFactoryPostProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.context.annotation.Configuration;
 
-import xin.guaika.cloud.drools.model.User;
+import org.springframework.test.context.junit4.SpringRunner;
+import xin.guaika.cloud.drools.test.model.User;
 
 /**
- * <P>
+ * <p>
  * Drools 测试
  * </P>
- * 
+ *
  * @author guaika junchen1314@foxmail.com
  * @Data 2017年8月30日 上午10:08:48
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes=DroolsTestApplication.class)
+@Slf4j
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class DroolsTest {
-	 private static final Logger _log = LoggerFactory.getLogger(DroolsTest.class);
-	    
-    @Autowired
-    private KieSession kieSession;
-    
+
+    /* @Autowired
+     private KieSession kieSession;*/
+
     @Test
     public void test1() {
-    	User user = new User();
-    	user.setName("test");
-    	kieSession.insert(user);
+        /*User user = new User();
+        user.setName("test");
+        kieSession.insert(user);
         int ruleFiredCount = kieSession.fireAllRules();
-        _log.info("rule:{}",ruleFiredCount);
+        _log.info("rule:{}", ruleFiredCount);*/
+        log.debug("111111,{}");
+    }
+
+    @Configuration
+    @EnableAutoConfiguration
+    public static class Config {
+
     }
 }

@@ -1,0 +1,6 @@
+drools:
+  enable: true
+logging:
+  level:
+    fun:
+      vyse: debug
