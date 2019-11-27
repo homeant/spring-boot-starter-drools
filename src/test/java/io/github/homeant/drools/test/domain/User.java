@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package xin.guaika.cloud.drools.test.model;
+package io.github.homeant.drools.test.domain;
 
 import java.io.Serializable;
 

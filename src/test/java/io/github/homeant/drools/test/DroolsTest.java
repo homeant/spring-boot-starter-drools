@@ -13,22 +13,19 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package xin.guaika.cloud.drools.test;
+package io.github.homeant.drools.test;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.kie.api.runtime.KieSession;
-import org.kie.spring.KModuleBeanFactoryPostProcessor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.test.context.junit4.SpringRunner;
-import xin.guaika.cloud.drools.test.model.User;
+import io.github.homeant.drools.test.domain.User;
 
 /**
  * <p>
@@ -43,16 +40,16 @@ import xin.guaika.cloud.drools.test.model.User;
 @SpringBootTest
 public class DroolsTest {
 
-    /* @Autowired
-     private KieSession kieSession;*/
+    @Autowired
+     private KieSession kieSession;
 
     @Test
     public void test1() {
-        /*User user = new User();
+        User user = new User();
         user.setName("test");
         kieSession.insert(user);
         int ruleFiredCount = kieSession.fireAllRules();
-        _log.info("rule:{}", ruleFiredCount);*/
+        log.info("rule:{}", ruleFiredCount);
         log.debug("111111,{}");
     }
 

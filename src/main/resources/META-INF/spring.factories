@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    fun.vyse.cloud.drools.boot.DroolsAutoConfiguration
+    io.github.homeant.drools.boot.DroolsAutoConfiguration

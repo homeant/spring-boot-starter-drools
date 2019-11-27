@@ -1,6 +1,7 @@
-drools:
-  enable: true
+spring:
+  drools:
+    enable: true
 logging:
   level:
-    fun:
-      vyse: debug
+    io:
+      github: debug

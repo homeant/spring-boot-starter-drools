@@ -1,6 +1,6 @@
-package cloud.user
+package io.github.homeant
 
-import xin.guaika.cloud.drools.test.model.User;
+import io.github.homeant.drools.test.domain.User;
 
 rule "user.name"
 
